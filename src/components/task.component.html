@@ -1,0 +1,16 @@
+<p> Im in the task component! </p>
+<app-task-item></app-task-item>
+
+<table>
+    <thead>
+        <th>ID</th>
+        <th>Name</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let task of tasks">
+            <td>{{ task.id }} </td>
+            <td> {{ task.name }}</td>
+        </tr>
+    </tbody>
+    
+</table>
